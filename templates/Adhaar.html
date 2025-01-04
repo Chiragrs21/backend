@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aadhar Information</title>
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      .spinner-container {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container bg-white mt-5">
+      <h4 class="mt-4">OSINT Automation:</h4>
+      <hr />
+      <h4>Scan name: {{ data.name }}</h4>
+
+      <!-- Download Button -->
+      <hr />
+      <!-- Personal Information Section -->
+      <div class="container mt-4">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-subtitle mb-2 text-muted">Personal Information</h5>
+            <div class="row">
+              <div class="col-md-6">
+                <p>
+                  <strong>PAN Number:</strong> {{
+                  data.json_data.result.pan_number }}
+                </p>
+                <p>
+                  <strong>Full Name:</strong> {{ data.json_data.result.full_name
+                  }}
+                </p>
+                <p>
+                  <strong>Masked Aadhaar:</strong> {{
+                  data.json_data.result.masked_aadhaar }}
+                </p>
+                <p>
+                  <strong>Gender:</strong> {{ data.json_data.result.gender }}
+                </p>
+                <p>
+                  <strong>Date of Birth:</strong> {{ data.json_data.result.dob
+                  }}
+                </p>
+                <p>
+                  <strong>Aadhaar Linked:</strong> {{
+                  data.json_data.result.aadhaar_linked | default('No') }}
+                </p>
+                <p>
+                  <strong>Category:</strong> {{ data.json_data.result.category
+                  }}
+                </p>
+              </div>
+              <div class="col-md-6">
+                <p><strong>Email:</strong> {{ data.json_data.result.email }}</p>
+                <p>
+                  <strong>Phone Number:</strong> {{
+                  data.json_data.result.phone_number }}
+                </p>
+                <p>
+                  <strong>Is Director:</strong> {{ 'Yes' if
+                  data.json_data.result.is_director.found else 'No' }}
+                </p>
+                <p>
+                  <strong>Is Sole Proprietor:</strong> {{ 'Yes' if
+                  data.json_data.result.is_sole_proprietor.found else 'No' }}
+                </p>
+                <p>
+                  <strong>First Name:</strong> {{ data.json_data.result.fname }}
+                </p>
+                <p>
+                  <strong>DIN:</strong> {{ data.json_data.result.din_info.din }}
+                </p>
+                <p>
+                  <strong>DIN Allocation Date:</strong> {{
+                  data.json_data.result.din_info.dinAllocationDate }}
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Address Section -->
+      <div class="container mt-4">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-subtitle mb-2 text-muted">Address</h5>
+            <p>
+              <strong>Line 1:</strong> {{ data.json_data.result.address.line_1
+              }}
+            </p>
+            <p>
+              <strong>Line 2:</strong> {{ data.json_data.result.address.line_2
+              }}
+            </p>
+            <p>
+              <strong>Street Name:</strong> {{
+              data.json_data.result.address.street_name }}
+            </p>
+            <p>
+              <strong>City:</strong> {{ data.json_data.result.address.city }}
+            </p>
+            <p>
+              <strong>State:</strong> {{ data.json_data.result.address.state }}
+            </p>
+            <p>
+              <strong>Country:</strong> {{ data.json_data.result.address.country
+              }}
+            </p>
+            <p><strong>ZIP:</strong> {{ data.json_data.result.address.zip }}</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Director Information Section -->
+      <div class="container mt-4">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-subtitle mb-2 text-muted">Director Information</h5>
+            <div class="mb-3">
+              {% for info in data.json_data.result.is_director.info %}
+              <div class="card mb-2">
+                <div class="card-body">
+                  <p><strong>GST:</strong> {{ info.gst }}</p>
+                  <p>
+                    <strong>Aggregate Turn Over:</strong> {{
+                    info.aggregate_turn_over }}
+                  </p>
+                  <p><strong>Status:</strong> {{ info.status }}</p>
+                </div>
+              </div>
+              {% endfor %}
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Sole Proprietor Information Section -->
+      <div class="container mt-4">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-subtitle mb-2 text-muted">
+              Sole Proprietor Information
+            </h5>
+            <div class="mb-3">
+              {% for info in data.json_data.result.is_sole_proprietor.info %}
+              <div class="card mb-2">
+                <div class="card-body">
+                  <p><strong>GST:</strong> {{ info.gst }}</p>
+                  <p>
+                    <strong>Aggregate Turn Over:</strong> {{
+                    info.aggregate_turn_over }}
+                  </p>
+                  <p><strong>Status:</strong> {{ info.status }}</p>
+                </div>
+              </div>
+              {% endfor %}
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Company List Section -->
+      <div class="container mt-4">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-subtitle mb-2 text-muted">Company List</h5>
+            <div class="mb-3">
+              {% for company in data.json_data.result.din_info.company_list %}
+              <div class="card mb-2">
+                <div class="card-body">
+                  <p><strong>CIN:</strong> {{ company.cin }}</p>
+                  <p>
+                    <strong>Company Name:</strong> {{ company.company_name }}
+                  </p>
+                </div>
+              </div>
+              {% endfor %}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Include Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
+</html>

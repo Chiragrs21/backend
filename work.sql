@@ -1,0 +1,1 @@
+select f.flight_id, f.departure_date from flight f join airplane a on f.airplane_id = a.airplane_id where a.airplane_id = "A350-900" AND a.manufacturer = "Airbus";

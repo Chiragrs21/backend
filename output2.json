@@ -1,0 +1,43 @@
+{
+    "name": "upi_details",
+    "query": "9797944@ybl",
+    "status": "completed",
+    "date": "2024-06-20 14:55:16",
+    "json_data": {
+        "code": 200,
+        "message": "Data Found Successfully !",
+        "result": {
+            "name": "Ajeet Bharti",
+            "ifsc": "HDFC0000930",
+            "vpa": "8368978144@paytm",
+            "vpa_details": {
+                "vpa": "8368978144@paytm",
+                "account_holder_name": "Ajeet Bharti",
+                "entity_type": "INDIVIDUAL"
+            },
+            "account_details": {
+                "account_type": "SAVINGS",
+                "account_ifsc": "HDFC0000930"
+            },
+            "ifsc_details": {
+                "BANK": "HDFC Bank",
+                "IFSC": "HDFC0000930",
+                "BRANCH": "NOIDA SECTOR ONE HUNDRED TEN",
+                "CENTRE": "NOIDA",
+                "DISTRICT": "NOIDA",
+                "STATE": "UTTAR PRADESH",
+                "ADDRESS": "HDFC BANK LTDPLOT NO-1, BLOCK A-2COMMERCIAL COMPLEX, SECTOR 110,",
+                "CONTACT": "+919935903333",
+                "IMPS": "TRUE",
+                "RTGS": "TRUE",
+                "CITY": "GAUTAM BODDA NAGAR",
+                "ISO3166": "IN-UP",
+                "NEFT": "TRUE",
+                "MICR": "110240127",
+                "UPI": "TRUE",
+                "SWIFT": "HDFCINBB"
+            }
+        }
+    },
+    "option": "9"
+}

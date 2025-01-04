@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Email Details</title>
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <style>
+      .container {
+        max-width: 800px;
+        margin: 20px auto;
+        padding: 20px;
+        background-color: #ffffff;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+      .card {
+        border-radius: 8px;
+        margin-bottom: 20px;
+      }
+      .card h5 {
+        margin-top: 0;
+        color: #007bff;
+      }
+      .card p {
+        margin: 5px 0;
+      }
+      .card-header {
+        background-color: #f8f9fa;
+      }
+      .list-group-item {
+        border: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h2 class="text-center mb-4">Email Details</h2>
+      <div class="card">
+        <div class="card-header">
+          <h4 class="card-title">
+            Email Address: {{ data.json_data.data.email_address }}
+          </h4>
+        </div>
+        <div class="card-body">
+          <p>
+            <strong>Deliverable:</strong> {{ 'Yes' if
+            data.json_data.data.deliverable else 'No' }}
+          </p>
+          <p>
+            <strong>Disposable:</strong> {{ 'Yes' if
+            data.json_data.data.disposable else 'No' }}
+          </p>
+          <p><strong>Domain:</strong> {{ data.json_data.data.domain }}</p>
+          <p>
+            <strong>Catch-All:</strong> {{ 'Yes' if
+            data.json_data.data.catch_all else 'No' }}
+          </p>
+          <p>
+            <strong>Gibberish:</strong> {{ 'Yes' if
+            data.json_data.data.gibberish else 'No' }}
+          </p>
+          <p>
+            <strong>Spam:</strong> {{ 'Yes' if data.json_data.data.spam else
+            'No' }}
+          </p>
+          <p>
+            <strong>Valid Syntax:</strong> {{ 'Yes' if
+            data.json_data.data.valid_syntax else 'No' }}
+          </p>
+          <p>
+            <strong>Webmail:</strong> {{ 'Yes' if data.json_data.data.webmail
+            else 'No' }}
+          </p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+          <h5>Social Media Accounts</h5>
+        </div>
+        <div class="card-body">
+          {% if media %}
+          <ul class="list-group">
+            {% for platform in media %}
+            <li class="list-group-item">{{ platform }}</li>
+            {% endfor %}
+          </ul>
+          {% else %}
+          <p class="text-muted">No social media accounts found</p>
+          {% endif %}
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+          <h5>Breaches</h5>
+        </div>
+        <div class="card-body">
+          {% if data.social_media.data.breach_details.breaches %}
+          <ul class="list-group">
+            {% for breach in data.social_media.data.breach_details.breaches %}
+            <li class="list-group-item">
+              <strong>Name:</strong> {{ breach.name }}<br />
+              <strong>Domain:</strong> {{ breach.domain if breach.domain else
+              'N/A' }}<br />
+              <strong>Date:</strong> {{ breach.date }}
+            </li>
+            {% endfor %}
+          </ul>
+          {% else %}
+          <p class="text-muted">No breaches found</p>
+          {% endif %}
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+          <h5>Additional Breaches</h5>
+        </div>
+        <div class="card-body">
+          {% if data.breaches.result %}
+          <ul class="list-group">
+            {% for breach in data.breaches.result %}
+            <li class="list-group-item">
+              <strong>Email:</strong> {{ breach.email }}<br />
+              <strong>Hash Password:</strong> {{ breach.hash_password }}<br />
+              <strong>Password:</strong> {{ breach.password }}<br />
+              <strong>SHA1:</strong> {{ breach.sha1 }}<br />
+              <strong>Hash:</strong> {{ breach.hash }}<br />
+              <strong>Sources:</strong> {{ breach.sources }}
+            </li>
+            {% endfor %}
+          </ul>
+          {% else %}
+          <p class="text-muted">No additional breaches found</p>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
+</html>

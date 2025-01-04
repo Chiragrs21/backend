@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vehicle Information</title>
+    <!-- Include Bootstrap for styling -->
+    <link
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Include Font Awesome for icons -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!-- Navbar -->
+
+    <!-- Main content -->
+    <div class="container bg-white mt-4">
+      <br />
+      <h4>Vehicle Information :</h4>
+      <hr />
+      <div class="card mt-4">
+        <div class="card-body">
+          <!-- Dynamic Title -->
+          <h4 class="card-title mb-2 text-muted d-flex justify-content-center">
+            {{ data.json_data.result.regNo }}
+          </h4>
+          <div class="card mt-4">
+            <div class="card-body">
+              <h5 class="card-subtitle mb-2 text-muted">Vehicle Details</h5>
+              <div class="row">
+                <div class="col-md-6">
+                  <p>
+                    <strong>Registration Number:</strong> {{
+                    data.json_data.result.regNo }}
+                  </p>
+                  <p>
+                    <strong>Class:</strong> {{ data.json_data.result.class }}
+                  </p>
+                  <p>
+                    <strong>Chassis Number:</strong> {{
+                    data.json_data.result.chassis }}
+                  </p>
+                  <p>
+                    <strong>Engine Number:</strong> {{
+                    data.json_data.result.engine }}
+                  </p>
+                  <p>
+                    <strong>Manufacturer:</strong> {{
+                    data.json_data.result.vehicleManufacturerName }}
+                  </p>
+                  <p>
+                    <strong>Model:</strong> {{ data.json_data.result.model }}
+                  </p>
+                  <p>
+                    <strong>Colour:</strong> {{
+                    data.json_data.result.vehicleColour }}
+                  </p>
+                  <p>
+                    <strong>Fuel Type:</strong> {{ data.json_data.result.type }}
+                  </p>
+                </div>
+                <div class="col-md-6">
+                  <p>
+                    <strong>Emission Norms:</strong> {{
+                    data.json_data.result.normsType }}
+                  </p>
+                  <p>
+                    <strong>Body Type:</strong> {{
+                    data.json_data.result.bodyType }}
+                  </p>
+                  <p>
+                    <strong>Owner Count:</strong> {{
+                    data.json_data.result.ownerCount }}
+                  </p>
+                  <p>
+                    <strong>Owner:</strong> {{ data.json_data.result.owner }}
+                  </p>
+                  <p>
+                    <strong>Father's Name:</strong> {{
+                    data.json_data.result.ownerFatherName }}
+                  </p>
+                  <p>
+                    <strong>Status:</strong> {{ data.json_data.result.status }}
+                  </p>
+                  <p>
+                    <strong>Status As On:</strong> {{
+                    data.json_data.result.statusAsOn }}
+                  </p>
+                </div>
+              </div>
+              <h5 class="card-subtitle mb-2 text-muted">
+                Registration Details
+              </h5>
+              <div class="row">
+                <div class="col-md-6">
+                  <p>
+                    <strong>Registration Authority:</strong> {{
+                    data.json_data.result.regAuthority }}
+                  </p>
+                  <p>
+                    <strong>Registration Date:</strong> {{
+                    data.json_data.result.regDate }}
+                  </p>
+                  <p>
+                    <strong>Manufacturing Month/Year:</strong> {{
+                    data.json_data.result.vehicleManufacturingMonthYear }}
+                  </p>
+                  <p>
+                    <strong>Tax Upto:</strong> {{
+                    data.json_data.result.vehicleTaxUpto }}
+                  </p>
+                  <p>
+                    <strong>Insurance Company:</strong> {{
+                    data.json_data.result.vehicleInsuranceCompanyName }}
+                  </p>
+                </div>
+                <div class="col-md-6">
+                  <p>
+                    <strong>Insurance Upto:</strong> {{
+                    data.json_data.result.vehicleInsuranceUpto }}
+                  </p>
+                  <p>
+                    <strong>Insurance Policy Number:</strong> {{
+                    data.json_data.result.vehicleInsurancePolicyNumber }}
+                  </p>
+                </div>
+              </div>
+              <h5 class="card-subtitle mb-2 text-muted">Address</h5>
+              <div class="mb-2">
+                <p>
+                  <strong>District:</strong> {{
+                  data.json_data.result.splitPresentAddress.district | join(',
+                  ') }}
+                </p>
+                <p>
+                  <strong>State:</strong> {{
+                  data.json_data.result.splitPresentAddress.state | join(', ')
+                  }}
+                </p>
+                <p>
+                  <strong>Pincode:</strong> {{
+                  data.json_data.result.splitPresentAddress.pincode }}
+                </p>
+                <p>
+                  <strong>Country:</strong> {{
+                  data.json_data.result.splitPresentAddress.country | join(', ')
+                  }}
+                </p>
+              </div>
+              <h5 class="card-subtitle mb-2 text-muted">Specifications</h5>
+              <div class="row">
+                <div class="col-md-6">
+                  <p>
+                    <strong>Cubic Capacity:</strong> {{
+                    data.json_data.result.vehicleCubicCapacity }}
+                  </p>
+                  <p>
+                    <strong>Gross Vehicle Weight:</strong> {{
+                    data.json_data.result.grossVehicleWeight }}
+                  </p>
+                  <p>
+                    <strong>Unladen Weight:</strong> {{
+                    data.json_data.result.unladenWeight }}
+                  </p>
+                  <p>
+                    <strong>Category:</strong> {{
+                    data.json_data.result.vehicleCategory }}
+                  </p>
+                  <p>
+                    <strong>Standard Capacity:</strong> {{
+                    data.json_data.result.rcStandardCap }}
+                  </p>
+                </div>
+                <div class="col-md-6">
+                  <p>
+                    <strong>Number of Cylinders:</strong> {{
+                    data.json_data.result.vehicleCylindersNo }}
+                  </p>
+                  <p>
+                    <strong>Seating Capacity:</strong> {{
+                    data.json_data.result.vehicleSeatCapacity }}
+                  </p>
+                  <p>
+                    <strong>Sleeper Capacity:</strong> {{
+                    data.json_data.result.vehicleSleeperCapacity }}
+                  </p>
+                  <p>
+                    <strong>Standing Capacity:</strong> {{
+                    data.json_data.result.vehicleStandingCapacity }}
+                  </p>
+                  <p>
+                    <strong>Wheelbase:</strong> {{
+                    data.json_data.result.wheelbase }}
+                  </p>
+                </div>
+              </div>
+              <h5 class="card-subtitle mb-2 text-muted">
+                Additional Information
+              </h5>
+              <div class="mb-2">
+                <p>
+                  <strong>Commercial Vehicle:</strong> {{ 'Yes' if
+                  data.json_data.result.isCommercial else 'No' }}
+                </p>
+                <p>
+                  <strong>NOC Details:</strong> {{
+                  data.json_data.result.nocDetails or 'N/A' }}
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OSINT Automation</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <style>
+      .container {
+        margin-top: 20px;
+      }
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 20px;
+      }
+      table,
+      th,
+      td {
+        border: 2px solid black;
+      }
+      th,
+      td {
+        padding: 10px;
+        text-align: left;
+      }
+      .alert {
+        margin-top: 20px;
+      }
+      .btn-outline-dark {
+        margin: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">OSINT Automation</a>
+      </nav>
+
+      <!-- Page 1: Sub_Domain -->
+      <div class="bg-white">
+        <h4>OSINT Automation:</h4>
+        <hr />
+        <a href="/data/{{ name }}"
+          ><button type="button" class="btn btn-outline-dark">
+            <i class="icon-arrow-round-back"></i></button
+        ></a>
+        <h4>Sub Domain</h4>
+        <table>
+          <thead>
+            <tr>
+              <th>Link</th>
+              <th>Text</th>
+            </tr>
+          </thead>
+          <tbody>
+            {% if data.json_data and data.json_data.links %} {% for link in
+            data.json_data.links %}
+            <tr>
+              <td>
+                <a href="{{ link.href }}" target="_blank" rel="noreferrer"
+                  >{{ link.href }}</a
+                >
+              </td>
+              <td>{{ link.text }}</td>
+            </tr>
+            {% endfor %} {% else %}
+            <tr>
+              <td colspan="2">No data found</td>
+            </tr>
+            {% endif %}
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Page 2: Info -->
+      <div class="bg-white">
+        <h4>Info</h4>
+        <table>
+          <thead>
+            <tr>
+              <th>Key</th>
+              <th>Value</th>
+            </tr>
+          </thead>
+          <tbody>
+            {% if data.json_data and data.json_data.pages %} {% for key, value
+            in data.json_data.pages.items() %}
+            <tr>
+              <td>{{ key }}</td>
+              <td>{{ value | tojson }}</td>
+            </tr>
+            {% endfor %} {% else %}
+            <tr>
+              <td colspan="2">No data found</td>
+            </tr>
+            {% endif %}
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Page 3: Check_domain -->
+      <div>
+        <h4>Check Domain</h4>
+        <div class="alert alert-primary" role="alert">
+          <div>
+            <b>Note:</b> The check_domain result includes an attribute called
+            results, where a value of false indicates that the domain is
+            <b>not blocked</b>, and a value of true indicates that it
+            <b>is blocked</b>.
+          </div>
+        </div>
+        <table>
+          <thead>
+            <tr>
+              <th>Field</th>
+              <th>Value</th>
+            </tr>
+          </thead>
+          <tbody>
+            {% if data.check %} {% for key, value in data.check.items() %}
+            <tr>
+              <td>{{ key }}</td>
+              <td>{{ value }}</td>
+            </tr>
+            {% endfor %} {% else %}
+            <tr>
+              <td colspan="2">No data found</td>
+            </tr>
+            {% endif %}
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Page 4: Domain_search -->
+      <div class="bg-white">
+        <h4>Domain Search</h4>
+        <table>
+          <thead>
+            <tr>
+              <th>Key</th>
+              <th>Value</th>
+            </tr>
+          </thead>
+          <tbody>
+            {% if data.domain_search %} {% for key, value in
+            data.domain_search.data.items() %} {% if key != 'emails' %}
+            <tr>
+              <td><strong>{{ key }}</strong></td>
+              <td>
+                {% if value is string %} {{ value }} {% elif value is number %}
+                {{ value }} {% elif value is boolean %} {{ value }} {% elif
+                value is iterable and not value is mapping %}
+                <ul>
+                  {% for item in value %}
+                  <li>{{ item }}</li>
+                  {% endfor %}
+                </ul>
+                {% elif value is mapping %}
+                <ul>
+                  {% for sub_key, sub_value in value.items() %}
+                  <li>
+                    <strong>{{ sub_key }}</strong>: {% if sub_value is string %}
+                    {{ sub_value }} {% elif sub_value is number %} {{ sub_value
+                    }} {% elif sub_value is boolean %} {{ sub_value }} {% elif
+                    sub_value is iterable and not sub_value is mapping %}
+                    <ul>
+                      {% for item in sub_value %}
+                      <li>{{ item }}</li>
+                      {% endfor %}
+                    </ul>
+                    {% elif sub_value is mapping %}
+                    <ul>
+                      {% for inner_key, inner_value in sub_value.items() %}
+                      <li>
+                        <strong>{{ inner_key }}</strong>: {{ inner_value }}
+                      </li>
+                      {% endfor %}
+                    </ul>
+                    {% else %} {{ sub_value | tojson }} {% endif %}
+                  </li>
+                  {% endfor %}
+                </ul>
+                {% else %} {{ value | tojson }} {% endif %}
+              </td>
+            </tr>
+            {% endif %} {% endfor %} {% if data.domain_search.data.emails %}
+            <tr>
+              <td><strong>Emails</strong></td>
+              <td>
+                <ul>
+                  {% for email in data.domain_search.data.emails %}
+                  <li>
+                    <strong>Email:</strong> {{ email.value }}<br />
+                    <strong>Type:</strong> {{ email.type }}<br />
+                    <strong>Confidence:</strong> {{ email.confidence }}<br />
+                    <strong>Department:</strong> {{ email.department }}<br />
+                    <strong>Sources:</strong>
+                    <ul>
+                      {% for source in email.sources %}
+                      <li>
+                        <strong>Domain:</strong> {{ source.domain }}<br />
+                        <strong>URI:</strong>
+                        <a href="{{ source.uri }}" target="_blank"
+                          >{{ source.uri }}</a
+                        ><br />
+                        <strong>Extracted On:</strong> {{ source.extracted_on
+                        }}<br />
+                        <strong>Last Seen On:</strong> {{ source.last_seen_on
+                        }}<br />
+                        <strong>Still On Page:</strong> {{ source.still_on_page
+                        }}
+                      </li>
+                      {% endfor %}
+                    </ul>
+                  </li>
+                  {% endfor %}
+                </ul>
+              </td>
+            </tr>
+            {% endif %} {% else %}
+            <tr>
+              <td colspan="2">No data found</td>
+            </tr>
+            {% endif %}
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Page 5: Certificates -->
+      <div>
+        <h4>Certificates</h4>
+        <table>
+          <thead>
+            <tr>
+              <th>Issuer CA ID</th>
+              <th>Issuer Name</th>
+              <th>Common Name</th>
+              <th>Name Value</th>
+              <th>ID</th>
+              <th>Entry Timestamp</th>
+              <th>Not Before</th>
+              <th>Not After</th>
+              <th>Serial Number</th>
+              <th>Result Count</th>
+            </tr>
+          </thead>
+          <tbody>
+            {% if data.certificates %} {% for certificate in data.certificates
+            %}
+            <tr>
+              <td>{{ certificate.issuer_ca_id }}</td>
+              <td>{{ certificate.issuer_name }}</td>
+              <td>{{ certificate.common_name }}</td>
+              <td>{{ certificate.name_value }}</td>
+              <td>{{ certificate.id }}</td>
+              <td>{{ certificate.entry_timestamp }}</td>
+              <td>{{ certificate.not_before }}</td>
+              <td>{{ certificate.not_after }}</td>
+              <td>{{ certificate.serial_number }}</td>
+              <td>{{ certificate.result_count }}</td>
+            </tr>
+            {% endfor %} {% else %}
+            <tr>
+              <td colspan="10">No certificates found</td>
+            </tr>
+            {% endif %}
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </body>
+</html>

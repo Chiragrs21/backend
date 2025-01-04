@@ -1,0 +1,53 @@
+{
+    "name": "PAN_INFO",
+    "query": "AWAPT5565H",
+    "status": "completed",
+    "date": "2024-06-21 11:48:35",
+    "json_data": {
+        "code": 200,
+        "message": "Data Found Successfully !",
+        "result": {
+            "pan_number": "AWAPT5565H",
+            "full_name": "SHASHIDHAR  THORESHETTIHALLIKENCHAIAH",
+            "full_name_split": [
+                "SHASHIDHAR",
+                "",
+                "THORESHETTIHALLIKENCHAIAH"
+            ],
+            "masked_aadhaar": "XXXXXXXX1140",
+            "address": {
+                "line_1": "1557 1st cross 3rd main",
+                "line_2": "5th stage 1st phase BEML layout ",
+                "street_name": "Kenchanahalli NDBO",
+                "zip": "560098",
+                "city": "BANGALORE",
+                "state": "Karnataka",
+                "country": "INDIA",
+                "full": "1557 1st cross 3rd main 5th stage 1st phase BEML layout  Kenchanahalli NDBO BANGALORE KarnatakaINDIA 560098"
+            },
+            "email": "shashi8910@gmail.com",
+            "tax": true,
+            "phone_number": "9663266112",
+            "gender": "M",
+            "dob": "1989-01-10",
+            "aadhaar_linked": true,
+            "category": "person",
+            "less_info": false,
+            "is_director": {
+                "found": "No",
+                "info": []
+            },
+            "is_sole_proprietor": {
+                "found": "No",
+                "info": []
+            },
+            "fname": "KENCHAIAH THORESHETTIHALLI",
+            "din_info": {
+                "din": "",
+                "dinAllocationDate": "",
+                "company_list": []
+            }
+        }
+    },
+    "option": "7"
+}

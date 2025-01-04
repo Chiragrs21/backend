@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Data Page</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+      }
+      table {
+        width: 100%;
+        border-collapse: collapse;
+      }
+      th,
+      td {
+        border: 1px solid #ddd;
+        padding: 8px;
+      }
+      th {
+        background-color: #f2f2f2;
+      }
+      .nested-table {
+        margin-left: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Data for {{ data.name }}</h1>
+    <p>Status: <strong>{{ data.status }}</strong></p>
+    <p>Date: <strong>{{ data.date }}</strong></p>
+
+    <h2>IP Address Details</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Field</th>
+          <th>Value</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>IP Address</td>
+          <td>{{ data.json_data.ip_address }}</td>
+        </tr>
+        <tr>
+          <td>City</td>
+          <td>{{ data.json_data.city }}</td>
+        </tr>
+        <tr>
+          <td>Region</td>
+          <td>{{ data.json_data.region }}</td>
+        </tr>
+        <tr>
+          <td>Postal Code</td>
+          <td>{{ data.json_data.postal_code }}</td>
+        </tr>
+        <tr>
+          <td>Country</td>
+          <td>{{ data.json_data.country }}</td>
+        </tr>
+        <tr>
+          <td>Country Code</td>
+          <td>{{ data.json_data.country_code }}</td>
+        </tr>
+        <tr>
+          <td>Continent</td>
+          <td>{{ data.json_data.continent }}</td>
+        </tr>
+        <tr>
+          <td>Continent Code</td>
+          <td>{{ data.json_data.continent_code }}</td>
+        </tr>
+        <tr>
+          <td>Longitude</td>
+          <td>{{ data.json_data.longitude }}</td>
+        </tr>
+        <tr>
+          <td>Latitude</td>
+          <td>{{ data.json_data.latitude }}</td>
+        </tr>
+        <tr>
+          <td>Security</td>
+          <td>
+            {% if data.json_data.security %}
+            <table class="nested-table">
+              {% for subkey, subvalue in data.json_data.security.items() %}
+              <tr>
+                <td>{{ subkey }}</td>
+                <td>{{ subvalue }}</td>
+              </tr>
+              {% endfor %}
+            </table>
+            {% else %} No security data available. {% endif %}
+          </td>
+        </tr>
+        <tr>
+          <td>Timezone</td>
+          <td>
+            {% if data.json_data.timezone %}
+            <table class="nested-table">
+              {% for subkey, subvalue in data.json_data.timezone.items() %}
+              <tr>
+                <td>{{ subkey }}</td>
+                <td>{{ subvalue }}</td>
+              </tr>
+              {% endfor %}
+            </table>
+            {% else %} No timezone data available. {% endif %}
+          </td>
+        </tr>
+        <tr>
+          <td>Flag</td>
+          <td>
+            {% if data.json_data.flag %}
+            <img
+              src="{{ data.json_data.flag.png }}"
+              alt="Flag"
+              style="width: 50px"
+            />
+            <br />
+            Emoji: {{ data.json_data.flag.emoji }} {% else %} No flag data
+            available. {% endif %}
+          </td>
+        </tr>
+        <tr>
+          <td>Currency</td>
+          <td>
+            {% if data.json_data.currency %}
+            <table class="nested-table">
+              {% for subkey, subvalue in data.json_data.currency.items() %}
+              <tr>
+                <td>{{ subkey }}</td>
+                <td>{{ subvalue }}</td>
+              </tr>
+              {% endfor %}
+            </table>
+            {% else %} No currency data available. {% endif %}
+          </td>
+        </tr>
+        <tr>
+          <td>Connection</td>
+          <td>
+            {% if data.json_data.connection %}
+            <table class="nested-table">
+              {% for subkey, subvalue in data.json_data.connection.items() %}
+              <tr>
+                <td>{{ subkey }}</td>
+                <td>{{ subvalue }}</td>
+              </tr>
+              {% endfor %}
+            </table>
+            {% else %} No connection data available. {% endif %}
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h2>Verification Data</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Field</th>
+          <th>Value</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% if data.verify %} {% set verify_data = data.verify.data if
+        data.verify.data else {} %} {% for key, value in verify_data.items() %}
+        <tr>
+          <td>{{ key }}</td>
+          <td>
+            {% if value is mapping %}
+            <table class="nested-table">
+              {% for subkey, subvalue in value.items() %}
+              <tr>
+                <td>{{ subkey }}</td>
+                <td>{{ subvalue }}</td>
+              </tr>
+              {% endfor %}
+            </table>
+            {% elif value is iterable and not string %}
+            <ul>
+              {% for item in value %}
+              <li>{{ item }}</li>
+              {% endfor %}
+            </ul>
+            {% else %} {{ value }} {% endif %}
+          </td>
+        </tr>
+        {% endfor %} {% else %}
+        <tr>
+          <td colspan="2" class="error">No verification data available.</td>
+        </tr>
+        {% endif %}
+      </tbody>
+    </table>
+
+    <a href="/">Back to Home</a>
+  </body>
+</html>

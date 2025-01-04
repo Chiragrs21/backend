@@ -1,0 +1,547 @@
+{
+    "name": "DOMAIN",
+    "query": "https://www.simsrc.edu.in/",
+    "status": "completed",
+    "date": "2024-06-21 12:29:19",
+    "json_data": {
+        "links": [
+            {
+                "href": "https://simsrc.edu.in/anti_ragging_measures",
+                "text": "Anti- Ragging Helpline 1800-180-5522 (24 x 7 \u2013 Toll free) or email helpline@antiragging.in"
+            },
+            {
+                "href": "https://simsrc.edu.in/info_nmc",
+                "text": "Information Under MSR CLause B.1.11 (NMC)"
+            },
+            {
+                "href": "https://simsrc.edu.in/",
+                "text": ""
+            },
+            {
+                "href": "https://simsrc.edu.in/notification",
+                "text": "Notification"
+            },
+            {
+                "href": "https://simsrc.edu.in/results",
+                "text": "Results"
+            },
+            {
+                "href": "https://simsrc.edu.in/aboutus",
+                "text": "About Us"
+            },
+            {
+                "href": "https://simsrc.edu.in/chairman",
+                "text": "Chairman"
+            },
+            {
+                "href": "https://simsrc.edu.in/exedirector",
+                "text": "Executive Director"
+            },
+            {
+                "href": "https://simsrc.edu.in/deanmessage",
+                "text": "Principal & Dean"
+            },
+            {
+                "href": "https://simsrc.edu.in/medicalsuperintedent",
+                "text": "Medical Superintendent"
+            },
+            {
+                "href": "https://simsrc.edu.in/undergraduate",
+                "text": "Undergraduate"
+            },
+            {
+                "href": "https://simsrc.edu.in/postgraduate",
+                "text": "Postgraduate"
+            },
+            {
+                "href": "https://simsrc.edu.in/superspeaciality",
+                "text": "Super Speciality"
+            },
+            {
+                "href": "https://simsrc.edu.in/admission",
+                "text": "ADMISSION"
+            },
+            {
+                "href": "https://simsrc.edu.in/govtapproval",
+                "text": "GOVT APPROVAL"
+            },
+            {
+                "href": "https://simsrc.edu.in/campuslife",
+                "text": "CAMPUS LIFE"
+            },
+            {
+                "href": "https://simsrc.edu.in/department",
+                "text": "DEPARTMENT"
+            },
+            {
+                "href": "https://simsrc.edu.in/alumni",
+                "text": "ALUMNI"
+            },
+            {
+                "href": "https://simsrc.edu.in/publications",
+                "text": "Publications"
+            },
+            {
+                "href": "https://simsrc.edu.in/academics",
+                "text": "Academic Activities / CME / Workshops"
+            },
+            {
+                "href": "https://simsrc.edu.in/drugformulary/category/A",
+                "text": "SIMS Drug Formulary"
+            },
+            {
+                "href": "https://simsrc.edu.in/contact",
+                "text": "CONTACT"
+            },
+            {
+                "href": "https://simsrc.edu.in/research",
+                "text": "READ MORE"
+            },
+            {
+                "href": "https://simsrc.edu.in/home",
+                "text": "Home"
+            }
+        ],
+        "pages": {
+            "asn": "AS134050",
+            "asnname": "KGLN-AS KGLN Technologies Pvt Ltd, IN",
+            "city": "",
+            "country": "IN",
+            "domain": "www.simsrc.edu.in",
+            "ip": "103.57.125.26",
+            "ptr": "ns8.gturboserver.com",
+            "server": "nginx",
+            "url": "https://www.simsrc.edu.in/",
+            "mimeType": "text/html",
+            "tlsValidDays": 89,
+            "tlsAgeDays": 7,
+            "tlsValidFrom": "2024-06-14T01:11:14.000Z",
+            "apexDomain": "simsrc.edu.in",
+            "tlsIssuer": "R10",
+            "status": "200"
+        }
+    },
+    "certificates": "\"Not found\"",
+    "check": {
+        "success": true,
+        "error": null,
+        "result": {
+            "simsrc.edu.in": false
+        },
+        "invalidHosts": [],
+        "maxHostsInSingleQuery": 10
+    },
+    "domain_search": {
+        "data": {
+            "domain": "simsrc.edu.in",
+            "disposable": false,
+            "webmail": false,
+            "accept_all": false,
+            "pattern": null,
+            "organization": "SIMSRC",
+            "description": "SIMSRC is an academic institution that focuses on education, research, and simulation in healthcare.",
+            "industry": "Retail",
+            "twitter": null,
+            "facebook": null,
+            "linkedin": "https://linkedin.com/company/sapthagiri-motors",
+            "instagram": null,
+            "youtube": null,
+            "technologies": [
+                "apache",
+                "codeigniter",
+                "google-analytics",
+                "google-tag-manager",
+                "mysql",
+                "nginx",
+                "php",
+                "wordpress"
+            ],
+            "country": "IN",
+            "state": null,
+            "city": null,
+            "postal_code": null,
+            "street": null,
+            "headcount": "1-10",
+            "company_type": null,
+            "emails": [
+                {
+                    "value": "info@simsrc.edu.in",
+                    "type": "generic",
+                    "confidence": 94,
+                    "sources": [
+                        {
+                            "domain": "simsrc.edu.in",
+                            "uri": "http://simsrc.edu.in/home",
+                            "extracted_on": "2024-02-03",
+                            "last_seen_on": "2024-05-03",
+                            "still_on_page": true
+                        },
+                        {
+                            "domain": "simsrc.edu.in",
+                            "uri": "http://simsrc.edu.in/alumni",
+                            "extracted_on": "2023-09-24",
+                            "last_seen_on": "2024-04-08",
+                            "still_on_page": true
+                        },
+                        {
+                            "domain": "simsrc.edu.in",
+                            "uri": "http://simsrc.edu.in/contact",
+                            "extracted_on": "2023-09-24",
+                            "last_seen_on": "2024-04-09",
+                            "still_on_page": true
+                        },
+                        {
+                            "domain": "5bestincity.com",
+                            "uri": "http://5bestincity.com/medical-colleges-in-bengaluru-ka",
+                            "extracted_on": "2023-07-22",
+                            "last_seen_on": "2024-04-24",
+                            "still_on_page": true
+                        },
+                        {
+                            "domain": "simsrc.edu.in",
+                            "uri": "http://simsrc.edu.in",
+                            "extracted_on": "2023-03-13",
+                            "last_seen_on": "2024-06-13",
+                            "still_on_page": true
+                        },
+                        {
+                            "domain": "kua.in",
+                            "uri": "http://kua.in/education.html",
+                            "extracted_on": "2023-01-28",
+                            "last_seen_on": "2024-04-28",
+                            "still_on_page": true
+                        },
+                        {
+                            "domain": "simsrc.edu.in",
+                            "uri": "http://simsrc.edu.in/anatomy",
+                            "extracted_on": "2022-11-29",
+                            "last_seen_on": "2024-05-29",
+                            "still_on_page": true
+                        }
+                    ],
+                    "first_name": null,
+                    "last_name": null,
+                    "position": null,
+                    "seniority": null,
+                    "department": "support",
+                    "linkedin": null,
+                    "twitter": null,
+                    "phone_number": null,
+                    "verification": {
+                        "date": null,
+                        "status": null
+                    }
+                },
+                {
+                    "value": "groupheadhr@simsrc.edu.in",
+                    "type": "generic",
+                    "confidence": 81,
+                    "sources": [
+                        {
+                            "domain": "homeobook.com",
+                            "uri": "http://homeobook.com/medical-officer-sapthagiri-institute-of-medical-sciences-bengaluru",
+                            "extracted_on": "2023-12-08",
+                            "last_seen_on": "2024-06-09",
+                            "still_on_page": true
+                        },
+                        {
+                            "domain": "roadtaka.com",
+                            "uri": "http://roadtaka.com/category/karnataka/bangalore/page/3",
+                            "extracted_on": "2023-01-22",
+                            "last_seen_on": "2024-04-25",
+                            "still_on_page": true
+                        },
+                        {
+                            "domain": "roadtaka.com",
+                            "uri": "http://roadtaka.com/category/karnataka/page/4",
+                            "extracted_on": "2023-01-22",
+                            "last_seen_on": "2024-04-26",
+                            "still_on_page": true
+                        },
+                        {
+                            "domain": "roadtaka.com",
+                            "uri": "http://roadtaka.com/sapthagiri-super-speciality-hospital-address",
+                            "extracted_on": "2023-01-22",
+                            "last_seen_on": "2024-04-27",
+                            "still_on_page": true
+                        },
+                        {
+                            "domain": "indiajobvaccancies.com",
+                            "uri": "http://indiajobvaccancies.com/jobs/simsrc-hospital-hiring-health-care",
+                            "extracted_on": "2019-01-12",
+                            "last_seen_on": "2024-06-16",
+                            "still_on_page": true
+                        },
+                        {
+                            "domain": "simsrc.edu.in",
+                            "uri": "http://simsrc.edu.in/author/simsrc/page/2",
+                            "extracted_on": "2020-04-26",
+                            "last_seen_on": "2021-07-26",
+                            "still_on_page": false
+                        },
+                        {
+                            "domain": "simsrc.edu.in",
+                            "uri": "http://simsrc.edu.in/professor",
+                            "extracted_on": "2020-04-26",
+                            "last_seen_on": "2022-04-26",
+                            "still_on_page": false
+                        },
+                        {
+                            "domain": "simsrc.edu.in",
+                            "uri": "http://simsrc.edu.in/career",
+                            "extracted_on": "2019-04-21",
+                            "last_seen_on": "2022-06-13",
+                            "still_on_page": false
+                        }
+                    ],
+                    "first_name": null,
+                    "last_name": null,
+                    "position": null,
+                    "seniority": null,
+                    "department": "hr",
+                    "linkedin": null,
+                    "twitter": null,
+                    "phone_number": null,
+                    "verification": {
+                        "date": null,
+                        "status": null
+                    }
+                },
+                {
+                    "value": "admissions@simsrc.edu.in",
+                    "type": "generic",
+                    "confidence": 81,
+                    "sources": [
+                        {
+                            "domain": "wac.co.in",
+                            "uri": "http://wac.co.in/insights/medical-colleges-bangalore",
+                            "extracted_on": "2024-02-19",
+                            "last_seen_on": "2024-05-20",
+                            "still_on_page": true
+                        },
+                        {
+                            "domain": "whataftercollege.com",
+                            "uri": "http://whataftercollege.com/insights/medical-colleges-bangalore",
+                            "extracted_on": "2023-08-19",
+                            "last_seen_on": "2024-05-28",
+                            "still_on_page": true
+                        },
+                        {
+                            "domain": "simsrc.edu.in",
+                            "uri": "http://simsrc.edu.in/contact",
+                            "extracted_on": "2022-09-20",
+                            "last_seen_on": "2024-04-09",
+                            "still_on_page": true
+                        },
+                        {
+                            "domain": "campusoption.com",
+                            "uri": "http://campusoption.com/college/sapthagiri-institute-of-medical-sciences",
+                            "extracted_on": "2018-06-09",
+                            "last_seen_on": "2024-05-02",
+                            "still_on_page": true
+                        },
+                        {
+                            "domain": "simsrc.edu.in",
+                            "uri": "http://simsrc.edu.in",
+                            "extracted_on": "2022-06-13",
+                            "last_seen_on": "2022-06-13",
+                            "still_on_page": false
+                        },
+                        {
+                            "domain": "simsrc.edu.in",
+                            "uri": "http://simsrc.edu.in/contact-us",
+                            "extracted_on": "2022-06-13",
+                            "last_seen_on": "2022-06-13",
+                            "still_on_page": false
+                        },
+                        {
+                            "domain": "simsrc.edu.in",
+                            "uri": "http://simsrc.edu.in/mci-2",
+                            "extracted_on": "2022-06-13",
+                            "last_seen_on": "2022-06-13",
+                            "still_on_page": false
+                        },
+                        {
+                            "domain": "simsrc.edu.in",
+                            "uri": "http://simsrc.edu.in/sitemap",
+                            "extracted_on": "2022-06-13",
+                            "last_seen_on": "2022-06-13",
+                            "still_on_page": false
+                        },
+                        {
+                            "domain": "campushunt.in",
+                            "uri": "http://campushunt.in/blog/best-bsc-perfusion-technology-colleges-in-bangalore",
+                            "extracted_on": "2019-12-27",
+                            "last_seen_on": "2020-01-03",
+                            "still_on_page": false
+                        }
+                    ],
+                    "first_name": null,
+                    "last_name": null,
+                    "position": null,
+                    "seniority": null,
+                    "department": "hr",
+                    "linkedin": null,
+                    "twitter": null,
+                    "phone_number": null,
+                    "verification": {
+                        "date": null,
+                        "status": null
+                    }
+                },
+                {
+                    "value": "drshugota.c@simsrc.edu.in",
+                    "type": "personal",
+                    "confidence": 79,
+                    "sources": [
+                        {
+                            "domain": "irationcard.com",
+                            "uri": "http://irationcard.com/bengaluru-private-hospitals",
+                            "extracted_on": "2021-12-11",
+                            "last_seen_on": "2024-06-10",
+                            "still_on_page": true
+                        },
+                        {
+                            "domain": "seminarsonly.com",
+                            "uri": "http://seminarsonly.com/tech/pmjay-list-bengaluru.php",
+                            "extracted_on": "2019-09-08",
+                            "last_seen_on": "2024-05-06",
+                            "still_on_page": true
+                        }
+                    ],
+                    "first_name": null,
+                    "last_name": null,
+                    "position": null,
+                    "seniority": null,
+                    "department": null,
+                    "linkedin": null,
+                    "twitter": null,
+                    "phone_number": null,
+                    "verification": {
+                        "date": null,
+                        "status": null
+                    }
+                },
+                {
+                    "value": "alumni@simsrc.edu.in",
+                    "type": "generic",
+                    "confidence": 78,
+                    "sources": [
+                        {
+                            "domain": "simsrc.edu.in",
+                            "uri": "http://simsrc.edu.in/alumni",
+                            "extracted_on": "2019-05-03",
+                            "last_seen_on": "2024-04-08",
+                            "still_on_page": true
+                        }
+                    ],
+                    "first_name": null,
+                    "last_name": null,
+                    "position": null,
+                    "seniority": null,
+                    "department": null,
+                    "linkedin": null,
+                    "twitter": null,
+                    "phone_number": null,
+                    "verification": {
+                        "date": null,
+                        "status": null
+                    }
+                },
+                {
+                    "value": "hrmanager@simsrc.edu.in",
+                    "type": "personal",
+                    "confidence": 74,
+                    "sources": [
+                        {
+                            "domain": "homeobook.com",
+                            "uri": "http://homeobook.com/medical-officer-sapthagiri-institute-of-medical-sciences-bengaluru",
+                            "extracted_on": "2023-12-08",
+                            "last_seen_on": "2024-06-09",
+                            "still_on_page": true
+                        },
+                        {
+                            "domain": "docbizz.com",
+                            "uri": "http://docbizz.com/humanresources/jobdetail/bangalore/sapthagiri-insitute-of-medical-science-and-research-bengaluru-karnataka/speciality-doctors/surgical-gastroenterology/290",
+                            "extracted_on": "2022-06-07",
+                            "last_seen_on": "2022-06-07",
+                            "still_on_page": false
+                        },
+                        {
+                            "domain": "simsrc.edu.in",
+                            "uri": "http://simsrc.edu.in/author/simsrc/page/2",
+                            "extracted_on": "2020-04-26",
+                            "last_seen_on": "2021-07-26",
+                            "still_on_page": false
+                        },
+                        {
+                            "domain": "simsrc.edu.in",
+                            "uri": "http://simsrc.edu.in/professor",
+                            "extracted_on": "2020-04-26",
+                            "last_seen_on": "2022-04-26",
+                            "still_on_page": false
+                        },
+                        {
+                            "domain": "simsrc.edu.in",
+                            "uri": "http://simsrc.edu.in/career",
+                            "extracted_on": "2019-04-21",
+                            "last_seen_on": "2022-06-13",
+                            "still_on_page": false
+                        }
+                    ],
+                    "first_name": null,
+                    "last_name": null,
+                    "position": null,
+                    "seniority": null,
+                    "department": null,
+                    "linkedin": null,
+                    "twitter": null,
+                    "phone_number": null,
+                    "verification": {
+                        "date": null,
+                        "status": null
+                    }
+                },
+                {
+                    "value": "webmaster@simsrc.edu.in",
+                    "type": "generic",
+                    "confidence": 10,
+                    "sources": [
+                        {
+                            "domain": "simsrc.edu.in",
+                            "uri": "http://simsrc.edu.in/author/simsrc/page/2",
+                            "extracted_on": "2023-07-26",
+                            "last_seen_on": "2023-07-26",
+                            "still_on_page": false
+                        }
+                    ],
+                    "first_name": null,
+                    "last_name": null,
+                    "position": null,
+                    "seniority": null,
+                    "department": "it",
+                    "linkedin": null,
+                    "twitter": null,
+                    "phone_number": null,
+                    "verification": {
+                        "date": null,
+                        "status": null
+                    }
+                }
+            ],
+            "linked_domains": []
+        },
+        "meta": {
+            "results": 7,
+            "limit": 10,
+            "offset": 0,
+            "params": {
+                "domain": "https://www.simsrc.edu.in/",
+                "company": null,
+                "type": null,
+                "seniority": null,
+                "department": null
+            }
+        }
+    }
+}

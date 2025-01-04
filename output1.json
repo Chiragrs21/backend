@@ -1,0 +1,56 @@
+{
+    "name": "6360493427",
+    "query": "6360493427",
+    "status": "completed",
+    "date": "2024-07-11 22:57:22",
+    "json_data": {
+        "status": "success",
+        "phone": "+916360493427",
+        "phone_valid": true,
+        "phone_type": "mobile",
+        "phone_region": "India",
+        "country": "India",
+        "country_code": "IN",
+        "country_prefix": "91",
+        "international_number": "+91 63604 93427",
+        "local_number": "063604 93427",
+        "e164": "+916360493427",
+        "carrier": "Reliance Jio"
+    },
+    "upi_details": {
+        "code": 200,
+        "message": "Data Found Successfully !",
+        "result": {
+            "name": "VEENA R P",
+            "ifsc": "SBIN0040139",
+            "vpa": "6360493427@ybl",
+            "vpa_details": {
+                "vpa": "6360493427@ybl",
+                "account_holder_name": "VEENA R P",
+                "entity_type": "INDIVIDUAL"
+            },
+            "account_details": {
+                "account_type": "SAVINGS",
+                "account_ifsc": "SBIN0040139"
+            },
+            "ifsc_details": {
+                "BANK": "State Bank of India",
+                "IFSC": "SBIN0040139",
+                "BRANCH": "CHANNAGIRI",
+                "CENTRE": "DAVANAGARE",
+                "DISTRICT": "DAVANAGARE",
+                "STATE": "KARNATAKA",
+                "ADDRESS": "CHANNAGIRI,DAVANAGERE,KARNATAKA, 577 213",
+                "CONTACT": "+918189228032",
+                "IMPS": "TRUE",
+                "RTGS": "TRUE",
+                "CITY": "CHANNAGIRI",
+                "ISO3166": "IN-KA",
+                "NEFT": "TRUE",
+                "MICR": "577002017",
+                "UPI": "TRUE"
+            }
+        }
+    },
+    "option": "2"
+}

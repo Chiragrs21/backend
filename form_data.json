@@ -1,0 +1,135 @@
+{
+    "name": "project_234",
+    "query": "https://www.simsrc.edu.in/",
+    "status": "completed",
+    "date": "2024-03-02 22:06:36",
+    "json_data": {
+        "links": [
+            {
+                "href": "https://simsrc.edu.in/anti_ragging_measures",
+                "text": "Anti- Ragging Helpline 1800-180-5522 (24 x 7 \u2013 Toll free) or email helpline@antiragging.in"
+            },
+            {
+                "href": "https://simsrc.edu.in/info_nmc",
+                "text": "Information Under MSR CLause B.1.11 (NMC)"
+            },
+            {
+                "href": "https://simsrc.edu.in/",
+                "text": ""
+            },
+            {
+                "href": "https://simsrc.edu.in/notification",
+                "text": "Notification"
+            },
+            {
+                "href": "https://simsrc.edu.in/results",
+                "text": "Results"
+            },
+            {
+                "href": "https://simsrc.edu.in/admission",
+                "text": "Admission 2022"
+            },
+            {
+                "href": "https://simsrc.edu.in/aboutus",
+                "text": "About Us"
+            },
+            {
+                "href": "https://simsrc.edu.in/chairman",
+                "text": "Chairman"
+            },
+            {
+                "href": "https://simsrc.edu.in/exedirector",
+                "text": "Executive Director"
+            },
+            {
+                "href": "https://simsrc.edu.in/deanmessage",
+                "text": "Principal & Dean"
+            },
+            {
+                "href": "https://simsrc.edu.in/medicalsuperintedent",
+                "text": "Medical Superintendent"
+            },
+            {
+                "href": "https://simsrc.edu.in/undergraduate",
+                "text": "Undergraduate"
+            },
+            {
+                "href": "https://simsrc.edu.in/postgraduate",
+                "text": "Postgraduate"
+            },
+            {
+                "href": "https://simsrc.edu.in/superspeaciality",
+                "text": "Super Speciality"
+            },
+            {
+                "href": "https://simsrc.edu.in/govtapproval",
+                "text": "GOVT APPROVAL"
+            },
+            {
+                "href": "https://simsrc.edu.in/campuslife",
+                "text": "CAMPUS LIFE"
+            },
+            {
+                "href": "https://simsrc.edu.in/department",
+                "text": "DEPARTMENT"
+            },
+            {
+                "href": "https://simsrc.edu.in/alumni",
+                "text": "ALUMNI"
+            },
+            {
+                "href": "https://simsrc.edu.in/publications",
+                "text": "Publications"
+            },
+            {
+                "href": "https://simsrc.edu.in/academics",
+                "text": "Academic Activities / CME / Workshops"
+            },
+            {
+                "href": "https://simsrc.edu.in/drugformulary/category/A",
+                "text": "SIMS Drug Formulary"
+            },
+            {
+                "href": "https://simsrc.edu.in/contact",
+                "text": "CONTACT"
+            },
+            {
+                "href": "https://simsrc.edu.in/research",
+                "text": "READ MORE"
+            },
+            {
+                "href": "https://simsrc.edu.in/home",
+                "text": "Home"
+            }
+        ],
+        "pages": {
+            "asn": "AS134050",
+            "asnname": "KGLN-AS KGLN Technologies Pvt Ltd, IN",
+            "city": "",
+            "country": "IN",
+            "domain": "www.simsrc.edu.in",
+            "ip": "103.57.125.26",
+            "pt": "ns8.gturboserver.com",
+            "serrver": "nginx",
+            "url": "https://www.simsrc.edu.in/",
+            "apexDomain": "simsrc.edu.in",
+            "tlsIssuer": "cPanel, Inc. Certification Authority",
+            "tlsValidFrom": "2024-02-12T00:00:00.000Z",
+            "tlsValidDays": 90,
+            "tlsAgeDays": 19,
+            "status": "200",
+            "mimeType": "text/html",
+            "title": ""
+        }
+    },
+    "certificates": "\"Not found\"",
+    "check": {
+        "success": true,
+        "error": null,
+        "result": {
+            "simsrc.edu.in": false
+        },
+        "invalidHosts": [],
+        "maxHostsInSingleQuery": 10
+    }
+}

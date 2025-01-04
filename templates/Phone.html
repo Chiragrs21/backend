@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Phone Details</title>
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <style>
+      .container {
+        max-width: 900px;
+        margin: 20px auto;
+        padding: 20px;
+        background-color: #ffffff;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+      .card {
+        border-radius: 8px;
+        margin-bottom: 20px;
+      }
+      .card h4,
+      .card h5 {
+        margin-top: 0;
+      }
+      .text-muted {
+        color: #6c757d;
+      }
+      .btn-outline-dark {
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h2 class="text-center mb-4">Phone Details</h2>
+
+      <div class="card">
+        <div class="card-body">
+          <h4 class="card-title mb-4">{{ data.json_data.message }}</h4>
+
+          <div class="row mb-4">
+            <div class="col-md-6">
+              <h5 class="card-subtitle mb-3 text-muted">
+                Personal Information
+              </h5>
+              <ul class="list-unstyled">
+                <li><strong>Name:</strong> {{ data.name }}</li>
+                <li><strong>Query:</strong> {{ data.query }}</li>
+                <li><strong>Status:</strong> {{ data.status }}</li>
+                <li><strong>Date:</strong> {{ data.date }}</li>
+                <li><strong>Option:</strong> {{ data.option }}</li>
+              </ul>
+            </div>
+            <div class="col-md-6">
+              <h5 class="card-subtitle mb-3 text-muted">JSON Data</h5>
+              <ul class="list-unstyled">
+                <li><strong>Status:</strong> {{ data.json_data.status }}</li>
+                <li><strong>Phone:</strong> {{ data.json_data.phone }}</li>
+                <li>
+                  <strong>Phone Valid:</strong> {{ 'Yes' if
+                  data.json_data.phone_valid else 'No' }}
+                </li>
+                <li>
+                  <strong>Phone Type:</strong> {{ data.json_data.phone_type }}
+                </li>
+                <li>
+                  <strong>Phone Region:</strong> {{ data.json_data.phone_region
+                  }}
+                </li>
+                <li><strong>Country:</strong> {{ data.json_data.country }}</li>
+                <li>
+                  <strong>Country Code:</strong> {{ data.json_data.country_code
+                  }}
+                </li>
+                <li>
+                  <strong>International Number:</strong> {{
+                  data.json_data.international_number }}
+                </li>
+                <li>
+                  <strong>Local Number:</strong> {{ data.json_data.local_number
+                  }}
+                </li>
+                <li><strong>E164:</strong> {{ data.json_data.e164 }}</li>
+                <li><strong>Carrier:</strong> {{ data.json_data.carrier }}</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Uncomment and adjust as needed -->
+          <div class="card mb-4">
+            <div class="card-body">
+              <h5 class="card-subtitle mb-3 text-muted">UPI Details</h5>
+              <div class="row">
+                <div class="col-md-6">
+                  <ul class="list-unstyled">
+                    <li><strong>Code:</strong> {{ data.upi_details.code }}</li>
+                    <li>
+                      <strong>Message:</strong> {{ data.upi_details.message }}
+                    </li>
+                    <li>
+                      <strong>Name:</strong> {{ data.upi_details.result.name }}
+                    </li>
+                    <li>
+                      <strong>IFSC:</strong> {{ data.upi_details.result.ifsc }}
+                    </li>
+                    <li>
+                      <strong>VPA:</strong> {{ data.upi_details.result.vpa }}
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-md-6">
+                  <ul class="list-unstyled">
+                    <li>
+                      <strong>Account Type:</strong> {{
+                      data.upi_details.result.account_details.account_type }}
+                    </li>
+                    <li>
+                      <strong>Account IFSC:</strong> {{
+                      data.upi_details.result.account_details.account_ifsc }}
+                    </li>
+                    <li>
+                      <strong>Bank:</strong> {{
+                      data.upi_details.result.ifsc_details.BANK }}
+                    </li>
+                    <li>
+                      <strong>Branch:</strong> {{
+                      data.upi_details.result.ifsc_details.BRANCH }}
+                    </li>
+                    <li>
+                      <strong>Centre:</strong> {{
+                      data.upi_details.result.ifsc_details.CENTRE }}
+                    </li>
+                    <li>
+                      <strong>District:</strong> {{
+                      data.upi_details.result.ifsc_details.DISTRICT }}
+                    </li>
+                    <li>
+                      <strong>State:</strong> {{
+                      data.upi_details.result.ifsc_details.STATE }}
+                    </li>
+                    <li>
+                      <strong>Address:</strong> {{
+                      data.upi_details.result.ifsc_details.ADDRESS }}
+                    </li>
+                    <li>
+                      <strong>Contact:</strong> {{
+                      data.upi_details.result.ifsc_details.CONTACT }}
+                    </li>
+                    <li>
+                      <strong>IMPS:</strong> {{ 'Yes' if
+                      data.upi_details.result.ifsc_details.IMPS else 'No' }}
+                    </li>
+                    <li>
+                      <strong>RTGS:</strong> {{ 'Yes' if
+                      data.upi_details.result.ifsc_details.RTGS else 'No' }}
+                    </li>
+                    <li>
+                      <strong>City:</strong> {{
+                      data.upi_details.result.ifsc_details.CITY }}
+                    </li>
+                    <li>
+                      <strong>ISO3166:</strong> {{
+                      data.upi_details.result.ifsc_details.ISO3166 }}
+                    </li>
+                    <li>
+                      <strong>NEFT:</strong> {{ 'Yes' if
+                      data.upi_details.result.ifsc_details.NEFT else 'No' }}
+                    </li>
+                    <li>
+                      <strong>MICR:</strong> {{
+                      data.upi_details.result.ifsc_details.MICR }}
+                    </li>
+                    <li>
+                      <strong>UPI:</strong> {{ 'Yes' if
+                      data.upi_details.result.ifsc_details.UPI else 'No' }}
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
+</html>

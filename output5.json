@@ -1,0 +1,83 @@
+{
+    "name": "KA05LG5776",
+    "query": "KA05LG5776",
+    "status": "completed",
+    "date": "2024-06-25 11:57:13",
+    "json_data": {
+        "code": 200,
+        "result": {
+            "regNo": "KA05LG5776",
+            "class": "M-Cycle/Scooter(2WN)",
+            "chassis": "MB8DP12DLM8968675",
+            "engine": "AF216880276",
+            "vehicleManufacturerName": "SUZUKI MOTORCYCLE INDIA PVT LTD",
+            "model": "ACCESS 125 DISC BT (ALLOY WHEE",
+            "vehicleColour": "MATT BLACK",
+            "type": "PETROL",
+            "normsType": "BHARAT STAGE VI",
+            "bodyType": "2WN",
+            "ownerCount": "1",
+            "owner": "PRAMOD J",
+            "ownerFatherName": "K M JAYARAMA",
+            "mobileNumber": "",
+            "status": "ACTIVE",
+            "statusAsOn": "25/06/2024",
+            "regAuthority": "BENGALURU SOUTH  RTO, Karnataka",
+            "regDate": "07-Dec-2021",
+            "vehicleManufacturingMonthYear": "11/2021",
+            "rcExpiryDate": "06-Dec-2022",
+            "vehicleTaxUpto": "LTT",
+            "vehicleInsuranceCompanyName": "ICICI Lombard General Insurance Co. Ltd.",
+            "vehicleInsuranceUpto": "05-Dec-2026",
+            "vehicleInsurancePolicyNumber": "3005/MI-10637674/00/000",
+            "rcFinancer": "",
+            "splitPresentAddress": {
+                "district": [
+                    "BENGALURU SOUTH  RTO"
+                ],
+                "state": [
+                    [
+                        "Karnataka",
+                        "KA"
+                    ]
+                ],
+                "pincode": "560061",
+                "country": [
+                    "IN",
+                    "IND",
+                    "INDIA"
+                ]
+            },
+            "vehicleCubicCapacity": "124",
+            "grossVehicleWeight": "253",
+            "unladenWeight": "103",
+            "vehicleCategory": "2WN",
+            "rcStandardCap": "0",
+            "vehicleCylindersNo": "1",
+            "vehicleSeatCapacity": "2",
+            "vehicleSleeperCapacity": "0",
+            "vehicleStandingCapacity": "0",
+            "wheelbase": "1265",
+            "vehicleNumber": "KA05LG5776",
+            "puccNumber": "Newv4",
+            "puccUpto": "06-Dec-2022",
+            "blacklistStatus": "",
+            "blacklistDetails": [],
+            "challanDetails": [],
+            "permitIssueDate": "",
+            "permitNumber": "",
+            "permitType": "",
+            "permitValidFrom": "",
+            "permitValidUpto": "",
+            "nonUseStatus": "",
+            "nonUseFrom": "",
+            "nonUseTo": "",
+            "nationalPermitNumber": "",
+            "nationalPermitUpto": "",
+            "nationalPermitIssuedBy": "",
+            "isCommercial": false,
+            "nocDetails": ""
+        }
+    },
+    "option": "8"
+}

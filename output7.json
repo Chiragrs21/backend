@@ -1,0 +1,52 @@
+{
+    "name": "2409:40f2:1007:3897:3cfd:c42e:8cca:9f5c",
+    "query": "2409:40f2:1007:3897:3cfd:c42e:8cca:9f5c",
+    "status": "completed",
+    "date": "2024-06-21 12:29:19",
+    "json_data": {
+        "ip_address": "2409:40f2:1007:3897:3cfd:c42e:8cca:9f5c",
+        "city": "Bengaluru",
+        "city_geoname_id": 1277333,
+        "region": "Karnataka",
+        "region_iso_code": "KA",
+        "region_geoname_id": 1267701,
+        "postal_code": "560076",
+        "country": "India",
+        "country_code": "IN",
+        "country_geoname_id": 1269750,
+        "country_is_eu": false,
+        "continent": "Asia",
+        "continent_code": "AS",
+        "continent_geoname_id": 6255147,
+        "longitude": 77.5855,
+        "latitude": 12.9634,
+        "security": {
+            "is_vpn": false
+        },
+        "timezone": {
+            "name": "Asia/Kolkata",
+            "abbreviation": "IST",
+            "gmt_offset": 5,
+            "current_time": "13:15:57",
+            "is_dst": false
+        },
+        "flag": {
+            "emoji": "\ud83c\uddee\ud83c\uddf3",
+            "unicode": "U+1F1EE U+1F1F3",
+            "png": "https://static.abstractapi.com/country-flags/IN_flag.png",
+            "svg": "https://static.abstractapi.com/country-flags/IN_flag.svg"
+        },
+        "currency": {
+            "currency_name": "Indian Rupee",
+            "currency_code": "INR"
+        },
+        "connection": {
+            "autonomous_system_number": 55836,
+            "autonomous_system_organization": "Reliance Jio Infocomm Limited",
+            "connection_type": "Corporate",
+            "isp_name": "Reliance Jio Infocomm Limited",
+            "organization_name": "Reliance Jio Infocomm Limited"
+        }
+    },
+    "verify": "{\"success\":true,\"error\":{},\"data\":{\"ip\":\"2409:40f2:1007:3897:3cfd:c42e:8cca:9f5c\",\"score\":0.0,\"country\":\"IN\",\"state_prov\":\"Karnataka\",\"city\":\"Bengaluru\",\"timezone_offset\":\"+05:30\",\"isp_name\":\"Reliance Jio Infocomm Limited\",\"latitude\":12.97194,\"longitude\":77.59369,\"type\":\"MOB\",\"open_ports\":[],\"tor\":false,\"harmful\":false,\"vpn\":false,\"web_proxy\":false,\"public_proxy\":false,\"spam_number\":0,\"spam_urls\":[],\"applied_rules\":[]}}"
+}

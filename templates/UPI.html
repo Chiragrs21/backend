@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UPI Details</title>
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+  </head>
+  <body>
+    <div class="container bg-white mt-4">
+      <h4>Bank Details:</h4>
+      <hr />
+      <div class="card mt-4">
+        <div class="card-body">
+          <h4 class="card-title mb-2 text-muted text-center">
+            {{ data.json_data.result.name }}
+          </h4>
+          <div class="card mt-4">
+            <div class="card-body">
+              <h5 class="card-subtitle mb-2 text-muted">VPA Details</h5>
+              <p><strong>VPA:</strong> {{ data.json_data.result.vpa }}</p>
+              <p>
+                <strong>Account Holder Name:</strong> {{
+                data.json_data.result.vpa_details.account_holder_name }}
+              </p>
+              <p>
+                <strong>Entity Type:</strong> {{
+                data.json_data.result.vpa_details.entity_type }}
+              </p>
+            </div>
+          </div>
+          <div class="card mt-4">
+            <div class="card-body">
+              <h5 class="card-subtitle mb-2 text-muted">Account Details</h5>
+              <p>
+                <strong>Account Type:</strong> {{
+                data.json_data.result.account_details.account_type }}
+              </p>
+              <p>
+                <strong>Account IFSC:</strong> {{
+                data.json_data.result.account_details.account_ifsc }}
+              </p>
+            </div>
+          </div>
+          <div class="card mt-4">
+            <div class="card-body">
+              <h5 class="card-subtitle mb-2 text-muted">IFSC Details</h5>
+              <p>
+                <strong>BANK:</strong> {{
+                data.json_data.result.ifsc_details.BANK }}
+              </p>
+              <p>
+                <strong>Contact:</strong> {{
+                data.json_data.result.ifsc_details.CONTACT }}
+              </p>
+              <p>
+                <strong>IFSC:</strong> {{
+                data.json_data.result.ifsc_details.IFSC }}
+              </p>
+              <p>
+                <strong>BRANCH:</strong> {{
+                data.json_data.result.ifsc_details.BRANCH }}
+              </p>
+              <p>
+                <strong>CITY:</strong> {{
+                data.json_data.result.ifsc_details.CITY }}
+              </p>
+              <p>
+                <strong>STATE:</strong> {{
+                data.json_data.result.ifsc_details.STATE }}
+              </p>
+              <p>
+                <strong>ADDRESS:</strong> {{
+                data.json_data.result.ifsc_details.ADDRESS }}
+              </p>
+              <p>
+                <strong>MICR:</strong> {{
+                data.json_data.result.ifsc_details.MICR }}
+              </p>
+              <p>
+                <strong>IMPS:</strong> {{
+                data.json_data.result.ifsc_details.IMPS }}
+              </p>
+              <p>
+                <strong>RTGS:</strong> {{
+                data.json_data.result.ifsc_details.RTGS }}
+              </p>
+              <p>
+                <strong>NEFT:</strong> {{
+                data.json_data.result.ifsc_details.NEFT }}
+              </p>
+              <p>
+                <strong>UPI:</strong> {{ data.json_data.result.ifsc_details.UPI
+                }}
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
+</html>

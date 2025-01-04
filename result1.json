@@ -1,0 +1,21 @@
+{
+    "deliverable": true,
+    "domain_details": {
+        "accept_all": false,
+        "created": "1995-08-13 04:00:00",
+        "custom": false,
+        "disposable": false,
+        "dmarc_enforced": true,
+        "domain": "gmail.com",
+        "free": true,
+        "registered": true,
+        "spf_strict": true,
+        "suspicious_tld": false,
+        "tld": ".com",
+        "updated": "2023-07-11 10:10:13",
+        "valid_mx": true,
+        "website_exists": true
+    },
+    "inbox_full": false,
+    "valid_format": true
+}

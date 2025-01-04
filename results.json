@@ -1,0 +1,286 @@
+{
+    "code": 200,
+    "result": {
+        "task": "detailedGstinSearch",
+        "essentials": {
+            "gstin": "06AAFCI1307N1ZM"
+        },
+        "id": "660bb27dca91b600225636f2",
+        "patronId": "6213ddff7af93c3160f5a2b0",
+        "result": {
+            "gstnDetailed": {
+                "constitutionOfBusiness": "PRIVATE LIMITED COMPANY",
+                "legalNameOfBusiness": "INVINCIBLE PUBLICATION PRIVATE LIMITED",
+                "tradeNameOfBusiness": "INVINCIBLE PUBLICATION PRIVATE LIMITED",
+                "centreJurisdiction": "COMMISSIONERATE - GURUGRAM,DIVISION - DIVISION-SOUTH-1,RANGE - R-18 (JURISDICTIONAL OFFICE)",
+                "stateJurisdiction": "STATE - HARYANA,RANGE - GURGAON,DISTRICT - GURGAON (SOUTH),WARD - GURGAON (SOUTH) WARD 7",
+                "registrationDate": "2019-04-23",
+                "taxPayerDate": "",
+                "taxPayerType": "REGULAR",
+                "gstinStatus": "ACTIVE",
+                "cancellationDate": "",
+                "natureOfBusinessActivities": [
+                    "SUPPLIER OF SERVICES",
+                    "RETAIL BUSINESS"
+                ],
+                "additionalPlaceAddress": [
+                    {
+                        "emailId": "accounts@i-publish.in",
+                        "address": "",
+                        "natureOfBusiness": "",
+                        "mobile": "9599667779",
+                        "lastUpdatedDate": "",
+                        "splitAddress": {
+                            "district": [],
+                            "state": [
+                                []
+                            ],
+                            "city": [],
+                            "pincode": "",
+                            "country": [],
+                            "addressLine": ""
+                        }
+                    }
+                ],
+                "directorNames": [
+                    "AJAY SETIA",
+                    "SAGAR SETIA"
+                ],
+                "principalPlaceAddress": {
+                    "emailId": "accounts@i-publish.in",
+                    "address": "OFFICE NO.201A, 2ND FLOOR, SAS TOWERS, SECTOR-38, GURGAON, Gurugram, Haryana, 122003",
+                    "natureOfBusiness": "SUPPLIER OF SERVICES, RETAIL BUSINESS",
+                    "mobile": "9599667779",
+                    "lastUpdatedDate": "",
+                    "splitAddress": {
+                        "district": [
+                            "GURGAON"
+                        ],
+                        "state": [
+                            [
+                                "HARYANA",
+                                "HR"
+                            ]
+                        ],
+                        "city": [
+                            "GURGAON"
+                        ],
+                        "pincode": "122003",
+                        "country": [
+                            "IN",
+                            "IND",
+                            "INDIA"
+                        ],
+                        "addressLine": "OFFICE NO.201A,2ND FLOOR,SAS TOWERS,SECTOR-38,GURUGRAM"
+                    }
+                }
+            },
+            "gstnRecords": [
+                {
+                    "applicationStatus": "",
+                    "registrationName": "INVINCIBLE PUBLICATION PRIVATE LIMITED",
+                    "mobNum": "",
+                    "regType": "",
+                    "emailId": "",
+                    "tinNumber": "",
+                    "gstinRefId": "",
+                    "gstin": "06AAFCI1307N1ZM"
+                }
+            ],
+            "gstin": "06AAFCI1307N1ZM",
+            "annualAggregateTurnOver": "Slab: Rs. 1.5 Cr. to 5 Cr.",
+            "aggregateTurnOverRange": {
+                "minimum": 15000000,
+                "maximum": 50000000
+            },
+            "grossTotalIncome": "NA",
+            "grossTotalIncomeFinancialYear": "2022-2023",
+            "filingStatus": [
+                {
+                    "filingYear": "2023-2024",
+                    "monthOfFiling": "February",
+                    "methodOfFilling": "ONLINE",
+                    "dateOfFiling": "07/03/2024",
+                    "gstType": "GSTR1",
+                    "gstStatus": "Filed"
+                },
+                {
+                    "filingYear": "2023-2024",
+                    "monthOfFiling": "January",
+                    "methodOfFilling": "ONLINE",
+                    "dateOfFiling": "09/02/2024",
+                    "gstType": "GSTR1",
+                    "gstStatus": "Filed"
+                },
+                {
+                    "filingYear": "2023-2024",
+                    "monthOfFiling": "December",
+                    "methodOfFilling": "ONLINE",
+                    "dateOfFiling": "11/01/2024",
+                    "gstType": "GSTR1",
+                    "gstStatus": "Filed"
+                },
+                {
+                    "filingYear": "2023-2024",
+                    "monthOfFiling": "November",
+                    "methodOfFilling": "ONLINE",
+                    "dateOfFiling": "08/12/2023",
+                    "gstType": "GSTR1",
+                    "gstStatus": "Filed"
+                },
+                {
+                    "filingYear": "2023-2024",
+                    "monthOfFiling": "October",
+                    "methodOfFilling": "ONLINE",
+                    "dateOfFiling": "09/11/2023",
+                    "gstType": "GSTR1",
+                    "gstStatus": "Filed"
+                },
+                {
+                    "filingYear": "2023-2024",
+                    "monthOfFiling": "September",
+                    "methodOfFilling": "ONLINE",
+                    "dateOfFiling": "13/10/2023",
+                    "gstType": "GSTR1",
+                    "gstStatus": "Filed"
+                },
+                {
+                    "filingYear": "2023-2024",
+                    "monthOfFiling": "August",
+                    "methodOfFilling": "ONLINE",
+                    "dateOfFiling": "20/09/2023",
+                    "gstType": "GSTR1",
+                    "gstStatus": "Filed"
+                },
+                {
+                    "filingYear": "2023-2024",
+                    "monthOfFiling": "July",
+                    "methodOfFilling": "ONLINE",
+                    "dateOfFiling": "16/08/2023",
+                    "gstType": "GSTR1",
+                    "gstStatus": "Filed"
+                },
+                {
+                    "filingYear": "2023-2024",
+                    "monthOfFiling": "June",
+                    "methodOfFilling": "ONLINE",
+                    "dateOfFiling": "14/07/2023",
+                    "gstType": "GSTR1",
+                    "gstStatus": "Filed"
+                },
+                {
+                    "filingYear": "2022-2023",
+                    "monthOfFiling": "March",
+                    "methodOfFilling": "ONLINE",
+                    "dateOfFiling": "09/05/2023",
+                    "gstType": "GSTR1",
+                    "gstStatus": "Filed"
+                },
+                {
+                    "filingYear": "2023-2024",
+                    "monthOfFiling": "February",
+                    "methodOfFilling": "ONLINE",
+                    "dateOfFiling": "20/03/2024",
+                    "gstType": "GSTR3B",
+                    "gstStatus": "Filed"
+                },
+                {
+                    "filingYear": "2023-2024",
+                    "monthOfFiling": "January",
+                    "methodOfFilling": "ONLINE",
+                    "dateOfFiling": "14/02/2024",
+                    "gstType": "GSTR3B",
+                    "gstStatus": "Filed"
+                },
+                {
+                    "filingYear": "2023-2024",
+                    "monthOfFiling": "December",
+                    "methodOfFilling": "ONLINE",
+                    "dateOfFiling": "23/01/2024",
+                    "gstType": "GSTR3B",
+                    "gstStatus": "Filed"
+                },
+                {
+                    "filingYear": "2023-2024",
+                    "monthOfFiling": "November",
+                    "methodOfFilling": "ONLINE",
+                    "dateOfFiling": "20/12/2023",
+                    "gstType": "GSTR3B",
+                    "gstStatus": "Filed"
+                },
+                {
+                    "filingYear": "2023-2024",
+                    "monthOfFiling": "October",
+                    "methodOfFilling": "ONLINE",
+                    "dateOfFiling": "18/11/2023",
+                    "gstType": "GSTR3B",
+                    "gstStatus": "Filed"
+                },
+                {
+                    "filingYear": "2023-2024",
+                    "monthOfFiling": "September",
+                    "methodOfFilling": "ONLINE",
+                    "dateOfFiling": "20/10/2023",
+                    "gstType": "GSTR3B",
+                    "gstStatus": "Filed"
+                },
+                {
+                    "filingYear": "2023-2024",
+                    "monthOfFiling": "August",
+                    "methodOfFilling": "ONLINE",
+                    "dateOfFiling": "20/09/2023",
+                    "gstType": "GSTR3B",
+                    "gstStatus": "Filed"
+                },
+                {
+                    "filingYear": "2023-2024",
+                    "monthOfFiling": "July",
+                    "methodOfFilling": "ONLINE",
+                    "dateOfFiling": "16/08/2023",
+                    "gstType": "GSTR3B",
+                    "gstStatus": "Filed"
+                },
+                {
+                    "filingYear": "2023-2024",
+                    "monthOfFiling": "June",
+                    "methodOfFilling": "ONLINE",
+                    "dateOfFiling": "07/08/2023",
+                    "gstType": "GSTR3B",
+                    "gstStatus": "Filed"
+                },
+                {
+                    "filingYear": "2022-2023",
+                    "monthOfFiling": "March",
+                    "methodOfFilling": "ONLINE",
+                    "dateOfFiling": "10/05/2023",
+                    "gstType": "GSTR3B",
+                    "gstStatus": "Filed"
+                },
+                {
+                    "filingYear": "2022-2023",
+                    "monthOfFiling": "Annual",
+                    "methodOfFilling": "ONLINE",
+                    "dateOfFiling": "31/12/2023",
+                    "gstType": "GSTR9",
+                    "gstStatus": "Filed"
+                },
+                {
+                    "filingYear": "2021-2022",
+                    "monthOfFiling": "Annual",
+                    "methodOfFilling": "ONLINE",
+                    "dateOfFiling": "01/01/2023",
+                    "gstType": "GSTR9",
+                    "gstStatus": "Filed"
+                },
+                {
+                    "filingYear": "2022-2023",
+                    "monthOfFiling": "Annual",
+                    "methodOfFilling": "ONLINE",
+                    "dateOfFiling": "31/12/2023",
+                    "gstType": "GSTR9C",
+                    "gstStatus": "Filed"
+                }
+            ]
+        }
+    }
+}

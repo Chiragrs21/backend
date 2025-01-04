@@ -1,0 +1,53 @@
+{
+    "name": "lwfhiwfwefwf",
+    "query": "731091067961",
+    "status": "completed",
+    "date": "2024-08-05 11:29:20",
+    "json_data": {
+        "code": 200,
+        "message": "Data Found Successfully !",
+        "result": {
+            "pan_number": "GTMPM1033A",
+            "full_name": "HUCCHAGIRENAHALLI PAPANNA MAHESH",
+            "full_name_split": [
+                "HUCCHAGIRENAHALLI",
+                "PAPANNA",
+                "MAHESH"
+            ],
+            "masked_aadhaar": "XXXXXXXX7961",
+            "address": {
+                "line_1": "",
+                "line_2": "",
+                "street_name": "",
+                "zip": "",
+                "city": "",
+                "state": "",
+                "country": "",
+                "full": ""
+            },
+            "email": null,
+            "tax": false,
+            "phone_number": null,
+            "gender": "M",
+            "dob": "2003-05-25",
+            "aadhaar_linked": true,
+            "category": "person",
+            "less_info": false,
+            "is_director": {
+                "found": "No",
+                "info": []
+            },
+            "is_sole_proprietor": {
+                "found": "No",
+                "info": []
+            },
+            "fname": "",
+            "din_info": {
+                "din": "",
+                "dinAllocationDate": "",
+                "company_list": []
+            }
+        }
+    },
+    "option": "6"
+}
